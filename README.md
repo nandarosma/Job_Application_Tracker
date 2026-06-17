@@ -46,19 +46,6 @@ This project demonstrates front-end development fundamentals including:
 
 ---
 
-# 🎥 Demo
-
-### Live Preview
-
-🔗 https://yourusername.github.io/job-application-tracker/
-
-### GIF Demo
-
-<p align="center">
-  <img src="screenshots/demo.gif" width="900">
-</p>
-
----
 
 # 🖼️ Screenshots
 
@@ -66,30 +53,6 @@ This project demonstrates front-end development fundamentals including:
 
 <p align="center">
   <img src="screenshots/dashboard.png" width="900">
-</p>
-
----
-
-## Application Management
-
-<p align="center">
-  <img src="screenshots/applications.png" width="900">
-</p>
-
----
-
-## Analytics Dashboard
-
-<p align="center">
-  <img src="screenshots/analytics.png" width="900">
-</p>
-
----
-
-## Data Visualization
-
-<p align="center">
-  <img src="screenshots/chart.png" width="700">
 </p>
 
 ---
@@ -168,55 +131,9 @@ job-application-tracker
 ├── README.md
 │
 └── screenshots
-    ├── dashboard.png
-    ├── applications.png
-    ├── analytics.png
-    ├── chart.png
-    └── demo.gif
 ```
 
 ---
-
-# ⚙️ Installation
-
-Clone repository
-
-```bash
-git clone https://github.com/yourusername/job-application-tracker.git
-```
-
-Move into project directory
-
-```bash
-cd job-application-tracker
-```
-
-Run application
-
-```bash
-open index.html
-```
-
-or simply double-click:
-
-```text
-index.html
-```
-
----
-
-# 📊 Technical Highlights
-
-### Local Storage
-
-```javascript
-localStorage.setItem(
-  "jobs",
-  JSON.stringify(jobs)
-);
-```
-
-Used for client-side persistence without backend infrastructure.
 
 ### Dynamic Dashboard
 
@@ -292,51 +209,6 @@ while also serving as a practical front-end development project.
 
 ---
 
-# 👩‍💻 Author
-
-## Nanda Rosma
-
-Information Technology Student
-
-Machine Learning Enthusiast • Cloud Computing Learner • Web Developer
-
-### Connect With Me
-
-- GitHub: https://github.com/username
-- LinkedIn: https://linkedin.com/in/username
-
----
-
-# ⭐ Recruiter Notes
-
-This project demonstrates practical front-end engineering skills through:
-
-✔ CRUD Functionality
-
-✔ Data Persistence
-
-✔ State Management
-
-✔ Responsive Design
-
-✔ Dashboard Analytics
-
-✔ Interactive Data Visualization
-
-✔ User Experience Enhancement
-
-Suitable as a portfolio project for:
-
-- Apple Developer Academy
-- Front-End Developer Internship
-- Junior Web Developer
-- Software Engineer Internship
-- Product Development Programs
-
----
-
 <div align="center">
-
-### If you like this project, consider giving it a ⭐
 
 </div>
