@@ -50,10 +50,11 @@ This project demonstrates front-end development fundamentals including:
 # 🖼️ Screenshots
 
 ## Dashboard
+![Pickup by Hour](job_tracker1.jpg)
 
-<p align="center">
-  <img src="screenshots/dashboard.png" width="900">
-</p>
+![Pickup by Hour](job_tracker2.jpg)
+
+![Pickup by Hour](job_tracker3.jpg)
 
 ---
 
