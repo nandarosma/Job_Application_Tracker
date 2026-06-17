@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Job Tracker Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+
+      <div>
+
+        <h1 class="title">
+          Job Application Tracker
+        </h1>
+
+        <p class="subtitle">
+          Track all your job applications in one place
+        </p>
+
+      </div>
+
+      <button
+        id="toggleDark"
+        class="btn-dark"
+      >
+        🌙 Dark Mode
+      </button>
+
+    </header>
+
+    <!-- FORM -->
+
+    <section class="card">
+
+      <h2 class="section-title">
+        Add Application
+      </h2>
+
+      <div class="form-grid">
+
+        <input
+          type="text"
+          id="company"
+          placeholder="Company"
+          class="input"
+        />
+
+        <input
+          type="text"
+          id="position"
+          placeholder="Position"
+          class="input"
+        />
+
+        <input
+          type="date"
+          id="date"
+          class="input"
+        />
+
+        <select
+          id="status"
+          class="input"
+        >
+
+          <option value="Applied">
+            Applied
+          </option>
+
+          <option value="Interview">
+            Interview
+          </option>
+
+          <option value="Rejected">
+            Rejected
+          </option>
+
+          <option value="Accepted">
+            Accepted
+          </option>
+
+        </select>
+
+        <button
+          onclick="addJob()"
+          class="btn-primary"
+        >
+          Add Job
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- LIST -->
+
+    <section class="card">
+
+      <div class="job-header">
+
+        <h2 class="section-title">
+          Applications
+        </h2>
+
+        <button
+          onclick="clearAllJobs()"
+          class="btn-delete"
+        >
+          Clear All
+        </button>
+
+      </div>
+
+      <div class="search-grid">
+
+        <input
+          type="text"
+          id="search"
+          placeholder="Search company..."
+          class="input"
+        />
+
+        <select
+          id="filter"
+          class="input"
+        >
+
+          <option value="All">
+            All Status
+          </option>
+
+          <option value="Applied">
+            Applied
+          </option>
+
+          <option value="Interview">
+            Interview
+          </option>
+
+          <option value="Rejected">
+            Rejected
+          </option>
+
+          <option value="Accepted">
+            Accepted
+          </option>
+
+        </select>
+
+      </div>
+
+      <div id="jobList"></div>
+
+    </section>
+
+    <!-- DASHBOARD -->
+
+    <section class="card">
+
+      <h2 class="section-title">
+        Dashboard Analytics
+      </h2>
+
+      <div class="stats-grid">
+
+        <div class="stat-card blue">
+          <p>Total</p>
+          <h3 id="total">0</h3>
+        </div>
+
+        <div class="stat-card yellow">
+          <p>Interview</p>
+          <h3 id="interview">0</h3>
+        </div>
+
+        <div class="stat-card red">
+          <p>Rejected</p>
+          <h3 id="rejected">0</h3>
+        </div>
+
+        <div class="stat-card green">
+          <p>Accepted</p>
+          <h3 id="accepted">0</h3>
+        </div>
+
+      </div>
+
+      <div class="rate-grid">
+
+        <div class="rate-card">
+          <p>Interview Rate</p>
+          <h3 id="interviewRate">0%</h3>
+        </div>
+
+        <div class="rate-card">
+          <p>Acceptance Rate</p>
+          <h3 id="acceptanceRate">0%</h3>
+        </div>
+
+      </div>
+
+      <div class="chart-container">
+        <canvas id="chart"></canvas>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
